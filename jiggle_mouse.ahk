@@ -4,14 +4,15 @@ i = 0
 
 ^!s::
 Loop {
-    MouseMove, 20, 30, 50, R
+    MouseMove, 30, 40, 50, R
     sleep, 500 ; move the cursor back in half a second
-    MouseMove, -20, -30, 50, R
+    MouseMove, -30, -40, 50, R
 
 
-    Loop, 5
+    Loop, 25
         MouseClick, WheelUp
 
+    MouseClick, left, , , , 50
     MouseClick, left, , , , 50
     
 
