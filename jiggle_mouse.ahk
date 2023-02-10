@@ -8,6 +8,13 @@ Loop {
     sleep, 500 ; move the cursor back in half a second
     MouseMove, -20, -30, 50, R
 
+
+    Loop, 5
+        MouseClick, WheelUp
+
+    MouseClick, left, , , , 50
+    
+
     sleep, 240000 ; wait 4 minutes, 240000
     i++
 } Until i > 60
